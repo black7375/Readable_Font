@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "STIX Two Math";
+  src: local("STIX Two Math"), local('STIXTwoMath'),
+    local("STIX2Math"),
+    url("./fonts/STIX2Math.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "STIX Two Text";
+  src: local("STIX Two Text"), local("STIXTwoText"),
+    local("STIX2Text-Regular"),
+    url("./fonts/STIX2Text-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "STIX Two Text";
+  src: local("STIX Two Text Italic"), local('STIXTwoText-Italic'),
+    local("STIX2Text-Italic"),
+    url("./fonts/STIX2Text-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "STIX Two Text";
+  src: local("STIX Two Text Bold"), local('STIXTwoText-Bold'),
+    local("STIX2Text-Bold"),
+    url("./fonts/STIX2Text-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "STIX Two Text";
+  src: local("STIX Two Text Bold Italic"), local('STIXTwoText-BoldItalic'),
+    local("STIX2Text-BoldItalic"),
+    url("./fonts/STIX2Text-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+math {
+  font-family: "STIX Two Math", "Times New Roman", "Noto Serif", serif;
+}
+
+.htmlmathparagraph,
+mtext {
+  font-family: "STIX Two Text", "Times New Roman", "Noto Serif", serif;
+}
+
+.oldstylenumbers {
+  font-variant-numeric: oldstyle-nums;
+  /* Recommended syntax      */
+  font-feature-settings:         'onum';
+  /* OpenType feature syntax */
+  -moz-font-feature-settings:    'onum';
+  /* Gecko <= 33 syntax      */
+  -webkit-font-feature-settings: 'onum';
+  /* Blink syntax            */
+}
+
+*.calligraphic {
+  font-variant-alternates: styleset(calligraphic);
+  /* Recommended syntax      */
+  font-feature-settings:         'ss01';
+  /* OpenType feature syntax */
+  -moz-font-feature-settings:    'ss01';
+  /* Gecko <= 33 syntax      */
+  -webkit-font-feature-settings: 'ss01';
+  /* Blink syntax            */
+}

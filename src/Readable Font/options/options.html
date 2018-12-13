@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Readable Font</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../contents/substitue.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="./options.css" type="text/css" />
+  <link rel="stylesheet" href="../lib/toggle.css" type="text/css" />
+</head>
+
+<body>
+  <div id="title">Readable Font</div>
+
+  <h1>선명하게</h1>
+  <hr>
+  <div class="toggle">
+    <h2>저해상도 기기 최적화
+      <input type="checkbox" id="font_subpixel" class="toggle_checkbox">
+      <label class="toggle_btn" for="font_subpixel"></label></h2>
+  </div>
+  <p>선명하게 기술에서 쓰이는 안티얼라이싱은 저해상도 기기에서 흐릿하게 보일 수도 있습니다.</p>
+  <p>저해상도 기기 최적화 옵션을 활성화하면 서브픽셀 렌더링을 사용합니다.</p>
+  <div class="toggle">
+    <h2>가독성 향상
+      <input type="checkbox" id="font_legibility" class="toggle_checkbox">
+      <label class="toggle_btn" for="font_legibility"></label></h2>
+  </div>
+  <p>글씨의 합자(ligatures)와 간격조정(kerning) 기능을 활성화 시켜 가독성을 개선합니다.</p>
+  <p>글꼴의 렌더링 옵션을 수정하는 것이므로 글씨의 간격이 일부 변형될 수 도 있습니다.</p>
+  <br>
+  <h1>글꼴치환</h1>
+  <hr>
+  <div class="toggle">
+    <h2>향상된 글꼴
+      <input type="checkbox" id="font_better" class="toggle_checkbox">
+      <label class="toggle_btn" for="font_better"></label></h2>
+  </div>
+  <p>못생긴 글꼴을 비슷한 느낌이지만, 더 나은 글꼴로 대체합니다.</p>
+  <div class="toggle">
+    <h2>비슷한 글꼴
+    <input type="checkbox" id="font_alter" class="toggle_checkbox">
+    <label class="toggle_btn" for="font_alter"></label></h2>
+  </div>
+  <p>화면에 표시 될 글꼴이 없을 경우, 유사한 글꼴을 보여줍니다.</p>
+  <br>
+  <h1>수식표현</h1>
+  <hr>
+  <div class="toggle">
+    <h2>MathJax
+      <input type="checkbox" id="font_mathjax" class="toggle_checkbox">
+      <label class="toggle_btn" for="font_mathjax"></label></h2>
+  </div>
+  <p>MathML(수식 표현 체계중 하나)를 크롬계열 브라우저에서는 지원하지 않습니다.</p>
+  <p>MathML이 포함된 문서가 있으면 MathJax를 로드하여 보여줍니다.</p>
+  <br>
+  <h1>License</h1>
+  <hr>
+  <h2 id="readable">Readable Font</h2>
+  <pre>The MIT License
+
+Copyright (c) 2018 black7375 https://black7375.tumblr.com/
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+  </pre>
+  <table>
+    <tbody>
+      <tr>
+        <td>Noto Sans</td>
+        <td>Noto Serif</td>
+        <td>Lora</td>
+        </tr>
+        <tr>
+          <td>Gothic A1</td>
+          <td>KoPub Batang</td>
+          <td>STIX Two</td>
+          </tr>
+          <tr>
+            <td>Nanum Gothic</td>
+            <td>Nanum Gothic Coding</td>
+            <td>D2 Coding</td>
+          </tr>
+    </tbody>
+  </table>
+  <pre>These Font Software are licensed under the SIL Open Font License,
+Version 1.1.
+
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font
+creation efforts of academic and linguistic communities, and to
+provide a free and open framework in which fonts may be shared and
+improved in partnership with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded,
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply to
+any document created using the fonts or their derivatives.
+
+DEFINITIONS
+"Font Software" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+"Reserved Font Name" refers to any names specified as such after the
+copyright statement(s).
+
+"Original Version" refers to the collection of Font Software
+components as distributed by the Copyright Holder(s).
+
+"Modified Version" refers to any derivative made by adding to,
+deleting, or substituting -- in part or in whole -- any of the
+components of the Original Version, by changing formats or by porting
+the Font Software to a new environment.
+
+"Author" refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION & CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed,
+modify, redistribute, and sell modified and unmodified copies of the
+Font Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components, in
+Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the
+corresponding Copyright Holder. This restriction only applies to the
+primary font name as presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created using
+the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+  </pre>
+  <script type="text/javascript" src="./options.js"></script>
+  <script type="text/javascript" src="../lib/checkbox.js"></script>
+</body>
+
+</html>

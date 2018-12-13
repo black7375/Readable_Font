@@ -1,0 +1,634 @@
+@font-face {
+  font-family: "궁서";
+  src: local("궁서"), local("Gungsuh"),
+    local("Noto Serif"), local("NotoSerif"),
+    local("Noto Serif KR Regular"), local("NotoSerifkr-Regular"),
+    url(./fonts/NotoSerifCJKkr-Regular.woff2) format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "궁서체";
+  src: local("궁서체"), local("GungsuhChe"),
+    local("Noto Serif"), local("NotoSerif"),
+    local("Noto Serif KR Regular"), local("NotoSerifkr-Regular"),
+    url(./fonts/NotoSerifCJKkr-Regular.woff2) format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Gungsuh;
+  src: local("궁서"), local("Gungsuh"),
+    local("Noto Serif"), local("NotoSerif"),
+    local("Noto Serif KR Regular"), local("NotoSerifkr-Regular"),
+    url(./fonts/NotoSerifCJKkr-Regular.woff2) format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: GungsuhChe;
+  src: local("궁서체"), local("GungsuhChe"),
+    local("Noto Serif"), local("NotoSerif"),
+    local("Noto Serif KR Regular"), local("NotoSerifkr-Regular"),
+    url(./fonts/NotoSerifCJKkr-Regular.woff2) format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "궁서";
+  src: local("궁서"), local("Gungsuh"),
+    local("Noto Serif Bold"), local("NotoSerif-Bold"),
+    local("Noto Serif KR Bold"), local("NotoSerifKR-Bold"),
+    url(./fonts/NotoSerifCJKkr-Bold.woff2) format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "궁서체";
+  src: local("궁서체"), local("GungsuhChe"),
+    local("Noto Serif Bold"), local("NotoSerif-Bold"),
+    local("Noto Serif KR Bold"), local("NotoSerifKR-Bold"),
+    url(./fonts/NotoSerifCJKkr-Bold.woff2) format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Gungsuh;
+  src: local("궁서"), local("Gungsuh"),
+    local("Noto Serif Bold"), local("NotoSerif-Bold"),
+    local("Noto Serif KR Bold"), local("NotoSerifKR-Bold"),
+    url(./fonts/NotoSerifCJKkr-Bold.woff2) format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: GungsuhChe;
+  src: local("궁서체"), local("GungsuhChe"),
+    local("Noto Serif Bold"), local("NotoSerif-Bold"),
+    local("Noto Serif KR Bold"), local("NotoSerifKR-Bold"),
+    url(./fonts/NotoSerifCJKkr-Bold.woff2) format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Times New Roman";
+  src: local("Times New Roman"), local("TimesNewRoman"),
+    local("Lora"), local("Lora Regular"), local("Lora-Regular"),
+    url("./fonts/Lora-Regular.woff2") format("woff2"),
+    local("KoPub Batang"), local("KoPub Batang Medium"), local("KoPubBatang-Medium"), local("KoPub바탕체-Medium"),
+    local("KoPub Batang Regular"), local("KoPubBatang-Regular"), local("KoPub바탕체-Regular"),
+    url(./fonts/KoPub-Batang_Pro-Medium.woff2) format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+    font-family: "Times New Roman";
+    src: local("Times New Roman Italic"), local("TimesNewRoman-Italic"),
+    local("Lora Italic"), local("Lora-Italic"),
+    url("./fonts/Lora-Italic.woff2") format("woff2"),
+    local("KoPub Batang"), local("KoPub Batang Medium"), local("KoPubBatang-Medium"), local("KoPub바탕체-Medium"),
+    local("KoPub Batang Regular"), local("KoPubBatang-Regular"), local("KoPub바탕체-Regular"),
+    url(./fonts/KoPub-Batang_Pro-Medium.woff2) format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+  font-family: "Times New Roman";
+  src: local("Times New Roman Bold"), local("TimesNewRoman-Bold"),
+    local("Lora Bold"), local("Lora-Bold"),
+    url("./fonts/Lora-Bold.woff2") format("woff2"),
+    local("KoPub Batang Bold"), local("KoPubBatang-Bold"), local("KoPub바탕체-Bold"),
+    url(./fonts/KoPub-Batang_Pro-Bold.woff2) format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Times New Roman";
+  src: local("Times New Roman Bold Italic"), local("TimesNewRoman-BoldItalic"),
+  local("Lora Bold Italic"), local("Lora-BoldItalic"),
+  url("./fonts/Lora-BoldItalic.woff2") format("woff2"),
+  local("KoPub Batang Bold"), local("KoPubBatang-Bold"), local("KoPub바탕체-Bold"),
+  url(./fonts/KoPub-Batang_Pro-Bold.woff2) format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: local("Helvetica Neue UltraLight"), local("HelveticaNeue-UltraLight"),
+    local("Helvetica Light"), local("Helvetica-Light"),
+    local("Gothic A1 Thin"), local("GothicA1-Thin"),
+    url(./fonts/GothicA1-Thin.woff2) format("woff2");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: local("Helvetica Neue UltraLight Italic"), local("HelveticaNeue-UltraLightItalic"),
+    local("Helvetica Light Oblique"), local("Helvetica Light Oblique"),
+    local("Gothic A1 Thin"), local("GothicA1-Thin"),
+    url(./fonts/GothicA1-Thin.woff2) format("woff2");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: local("Helvetica Neue Thin"), local("HelveticaNeue-Thin"),
+    local("Helvetica Light"), local("Helvetica-Light"),
+    local("Arial"),
+    local("Gothic A1 ExtraLight"), local("GothicA1-ExtraLight"),
+    url(./fonts/GothicA1-ExtraLight.woff2) format("woff2");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: local("Helvetica Neue Thin"), local("HelveticaNeue-Thin"),
+    local("Helvetica Oblique"), local("Helvetica-Oblique"),
+    local("Arial"),
+    local("Gothic A1 ExtraLight"), local("GothicA1-ExtraLight"),
+    url(./fonts/GothicA1-ExtraLight.woff2) format("woff2");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: local("Helvetica Neue Light"), local("HelveticaNeue-Light"),
+    local("Helvetica Light"), local("Helvetica-Light"),
+    local("Arial"),
+    local("Gothic A1 Light"), local("GothicA1-Light"),
+    url(./fonts/GothicA1-Light.woff2) format("woff2");;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: local("Helvetica Neue Light"), local("HelveticaNeue-Light"),
+    local("Helvetica Oblique"), local("Helvetica-Oblique"),
+    local("Arial Italic"), local("Arial-Italic"),
+    local("Gothic A1 Light"), local("GothicA1-Light"),
+    url(./fonts/GothicA1-Light.woff2) format("woff2");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: local("Helvetica Neue"), local("HelveticaNeue"),
+    local("Helvetica Neue Roman"), local("HelveticaNeue-Roman"),
+    local("Helvetica"), local("Helvetica Roman"), local("Helvetica-Roman"),
+    local("Arial"),
+    local("Gothic A1 Regular"), local("GothicA1-Regular"),
+    url(./fonts/GothicA1-Regular.woff2) format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: local("Helvetica Neue Italic"), local("HelveticaNeue-Italic"),
+    local("Helvetica Oblique"), local("Helvetica-Oblique"),
+    local("Arial Italic"), local("Arial-Italic"),
+    local("Gothic A1 Regular"), local("GothicA1-Regular"),
+    url(./fonts/GothicA1-Regular.woff2) format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: local("Helvetica Neue Medium"), local("HelveticaNeue-Medium"),
+    local("Helvetica"), local("Helvetica Roman"), local("Helvetica-Roman"),
+    local("Arial"),
+    local("Gothic A1 Medium"), local("GothicA1-Medium"),
+    url(./fonts/GothicA1-Medium.woff2) format("woff2");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: local("Helvetica Neue Medium Italic"), local("HelveticaNeue-MediumItalic"),
+    local("Helvetica Oblique"), local("Helvetica-Oblique"),
+    local("Arial Italic"), local("Arial-Italic"),
+    local("Gothic A1 Medium"), local("GothicA1-Medium"),
+    url(./fonts/GothicA1-Medium.woff2) format("woff2");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: local("Helvetica Neue Bold"), local("HelveticaNeue-Bold"),
+    local("Helvetica Bold"), local("Helvetica-Bold"),
+    local("Arial Bold"),
+    local("Gothic A1 Bold"), local("GothicA1-Bold"),
+    url(./fonts/GothicA1-Bold.woff2) format("woff2");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: local("Helvetica Neue Bold Italic"), local("HelveticaNeue-BoldItalic"),
+    local("Helvetica Bold Oblique"), local("Helvetica-BoldOblique"),
+    local("Arial Bold Italic"), local("Arial-BoldItalic"),
+    local("Gothic A1 Bold"), local("GothicA1-Bold"),
+    url(./fonts/GothicA1-SemiBold.woff2) format("woff2");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: local("Helvetica Neue Heavy"), local("HelveticaNeue-Heavy"),
+    local("Helvetica Black"), local("Helvetica-Black"),
+    local("Arial Black") local("Arial-Black"),
+    local("Gothic A1 ExtraBold"), local("GothicA1-ExtraBold"),
+    url(./fonts/GothicA1-ExtraBold.woff2) format("woff2");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: local("Helvetica Neue Heavy Italic"), local("HelveticaNeue-HeavyItalic"),
+    local("Helvetica Black Oblique"), local("Helvetica-BlackOblique"),
+    local("Arial Bold Italic") local("Arial-BoldItalic"),
+    local("Gothic A1 ExtraBold"), local("GothicA1-ExtraBold"),
+    url(./fonts/GothicA1-ExtraBold.woff2) format("woff2");
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: local("Helvetica Neue Black"), local("HelveticaNeue-Black"),
+    local("Helvetica Black"), local("Helvetica-Black"),
+    local("Arial Black"), local("Arial-Black"),
+    local("Gothic A1 Black"), local("GothicA1-Black"),
+    url(./fonts/GothicA1-Black.woff2) format("woff2");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: local("Helvetica Neue Black Italic"), local("HelveticaNeue-BlackItalic"),
+    local("Helvetica Black Oblique"), local("Helvetica-BlackOblique"),
+    local("Arial Bold Italic") local("Arial-BoldItalic"),
+    local("Gothic A1 Black"), local("GothicA1-Black"),
+    url(./fonts/GothicA1-Black.woff2) format("woff2");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: local("Helvetica Light"), local("Helvetica-Light"),
+    local("Helvetica Neue Light"), local("HelveticaNeue-Light"),
+    local("Arial"),
+    local("Gothic A1 Light"), local("GothicA1-Light"),
+    url(./fonts/GothicA1-Light.woff2) format("woff2");;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: local("Helvetica Oblique"), local("Helvetica-Oblique"),
+    local("Helvetica Neue Light"), local("HelveticaNeue-Light"),
+    local("Arial Italic"), local("Arial-Italic"),
+    local("Gothic A1 Light"), local("GothicA1-Light"),
+    url(./fonts/GothicA1-Light.woff2) format("woff2");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: local("Helvetica"), local("Helvetica Roman"), local("Helvetica-Roman"),
+    local("Helvetica Neue"), local("HelveticaNeue"),
+    local("Helvetica Neue Roman"), local("HelveticaNeue-Bold"),
+    local("Arial"),
+    local("Gothic A1 Regular"), local("GothicA1-Regular"),
+    url(./fonts/GothicA1-Regular.woff2) format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: local("Helvetica Oblique"), local("Helvetica-Oblique"),
+    local("Helvetica Neue Italic"), local("HelveticaNeue-Italic"),
+    local("Arial Italic"), local("Arial-Italic"),
+    local("Gothic A1 Regular"), local("GothicA1-Regular"),
+    url(./fonts/GothicA1-Regular.woff2) format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: local("Helvetica Bold"), local("Helvetica-Bold"),
+    local("Helvetica Neue Bold"), local("HelveticaNeue-Bold"),
+    local("Arial Bold"),
+    local("Gothic A1 Bold"), local("GothicA1-Bold"),
+    url(./fonts/GothicA1-Bold.woff2) format("woff2");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: local("Helvetica Bold Oblique"), local("Helvetica-BoldOblique"),
+    local("Helvetica Neue Bold Italic"), local("HelveticaNeue-BoldItalic"),
+    local("Arial Bold Italic"), local("Arial-BoldItalic"),
+    local("Gothic A1 Bold"), local("GothicA1-Bold"),
+    url(./fonts/GothicA1-SemiBold.woff2) format("woff2");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: local("Helvetica Black"), local("Helvetica-Black"),
+    local("Helvetica Neue Black"), local("HelveticaNeue-Black"),
+    local("Arial Black"), local("Arial-Black"),
+    local("Gothic A1 Black"), local("GothicA1-Black"),
+    url(./fonts/GothicA1-Black.woff2) format("woff2");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: local("Helvetica Black Oblique"), local("Helvetica-BlackOblique"),
+    local("Helvetica Neue Black Italic"), local("HelveticaNeue-BlackItalic"),
+    local("Arial Bold Italic") local("Arial-BoldItalic"),
+    local("Gothic A1 Black"), local("GothicA1-Black"),
+    url(./fonts/GothicA1-Black.woff2) format("woff2");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Museo Sans";
+    src: local("Museo Sans 100"), local("MuseoSans-100"),
+    local("Noto Sans KR Thin"), local("NotoSansKR-Thin"),
+    url(./fonts/NotoSansCJKkr-Thin.woff2) format("woff2")
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Museo Sans";
+    src: local("Museo Sans 100 Italic"), local("MuseoSans-100Italic"),
+    local("Noto Sans KR Thin"), local("NotoSansKR-Thin"),
+    url(./fonts/NotoSansCJKkr-Thin.woff2) format("woff2")
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Museo Sans";
+    src: local("Museo Sans 300"), local("MuseoSans-300"),
+    local("Noto Sans KR Light"), local("NotoSansKR-Light"),
+    url(./fonts/NotoSansCJKkr-Light.woff2) format("woff2");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Museo Sans";
+    src: local("Museo Sans 300 Italic"), local("MuseoSans-300Italic"),
+    local("Noto Sans KR Light"), local("NotoSansKR-Light"),
+    url(./fonts/NotoSansCJKkr-Light.woff2) format("woff2");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Museo Sans";
+    src: local("Museo Sans 500"), local("MuseoSans-500"),
+     local("Noto Sans KR Medium"), local("NotoSansKR-Medium"),
+    url(./fonts/NotoSansCJKkr-Medium.woff2) format("woff2");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Museo Sans";
+    src: local("Museo Sans 500 Italic"), local("MuseoSans-500Italic"),
+    local("Noto Sans KR Medium"), local("NotoSansKR-Medium"),
+    url(./fonts/NotoSansCJKkr-Medium.woff2) format("woff2");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Museo Sans";
+    src: local("Museo Sans 700"), local("MuseoSans-700"),
+ local("Noto Sans Bold"), local("NotoSans-Bold"),
+    local("Noto Sans KR Bold"), local("NotoSansKR-Bold"),
+    url(./fonts/NotoSansCJKkr-Bold.woff2) format("woff2");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Museo Sans";
+    src: local("Museo Sans 700 Italic"), local("MuseoSans-700Italic"),
+ local("Noto Sans Bold"), local("NotoSans-Bold"),
+    local("Noto Sans KR Bold"), local("NotoSansKR-Bold"),
+    url(./fonts/NotoSansCJKkr-Bold.woff2) format("woff2");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Museo Sans";
+    src: local("Museo Sans 900"), local("MuseoSans-900"),
+ local("Noto Sans KR Black"), local("NotoSansKR-Black"),
+    url(./fonts/NotoSansCJKkr-Black.woff2) format("woff2");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Museo Sans";
+    src: local("Museo Sans 900 Italic"), local("MuseoSans-900Italic"),
+ local("Noto Sans KR Black"), local("NotoSansKR-Black"),
+    url(./fonts/NotoSansCJKkr-Black.woff2) format("woff2");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Gibson";
+    src: local("Gibson Light"), local("Gibson-Light"),
+     local("Noto Sans KR Light"), local("NotoSansKR-Light"),
+    url(./fonts/NotoSansCJKkr-Light.woff2) format("woff2");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Gibson";
+    src: local("Gibson Light Italic"), local("Gibson-LightItalic"),
+     local("Noto Sans KR Light"), local("NotoSansKR-Light"),
+    url(./fonts/NotoSansCJKkr-Light.woff2) format("woff2");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Gibson";
+    src: local("Gibson"), local("Gibson Regular"), local("Gibson-Regular"),
+    local("Noto Sans"), local("NotoSans"),
+    local("Noto Sans KR Regular"), local("NotoSansKR-Regular"),
+    url(./fonts/NotoSansCJKkr-Regular.woff2) format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Gibson";
+    src: local("Gibson Regular Italic"), local("Gibson-RegularItalic"),
+    local("Noto Sans"), local("NotoSans"),
+    local("Noto Sans KR Regular"), local("NotoSansKR-Regular"),
+    url(./fonts/NotoSansCJKkr-Regular.woff2) format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Gibson";
+    src: local("Gibson SemiBold"), local("Gibson-SemiBold"),
+    local("Noto Sans Bold"), local("NotoSans-Bold"),
+    local("Noto Sans KR Bold"), local("NotoSansKR-Bold"),
+    url(./fonts/NotoSansCJKkr-Bold.woff2) format("woff2");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Gibson";
+    src: local("Gibson SemiBold Italic"), local("Gibson-SemiBoldItalic"),
+    local("Noto Sans Bold"), local("NotoSans-Bold"),
+    local("Noto Sans KR Bold"), local("NotoSansKR-Bold"),
+    url(./fonts/NotoSansCJKkr-Bold.woff2) format("woff2");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Gibson";
+    src: local("Gibson Bold"), local("Gibson-Bold"),
+    local("Noto Sans KR Black"), local("NotoSansKR-Black"),
+    url(./fonts/NotoSansCJKkr-Black.woff2) format("woff2");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Gibson";
+    src: local("Gibson Bold Italic"), local("Gibson-BoldItalic"),
+    local("Noto Sans KR Black"), local("NotoSansKR-Black"),
+    url(./fonts/NotoSansCJKkr-Black.woff2) format("woff2");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Velino Text";
+    src: local("Velino Text Thin"), local("VerlinoText-Thin"),
+    local("Noto Serif KR ExtraLight"), local("NotoSerifKR-ExtraLight"),
+    url(./fonts/NotoSerifCJKkr-ExtraLight.woff2) format("woff2");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Velino Text";
+    src: local("Velino Text Thin Italic"), local("VerlinoText-ThinItalic"),
+    local("Noto Serif KR ExtraLight"), local("NotoSerifKR-ExtraLight"),
+    url(./fonts/NotoSerifCJKkr-ExtraLight.woff2) format("woff2");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Velino Text";
+    src: local("Velino Text Thin"), local("VerlinoText-Thin"),
+    local("Noto Serif KR Light"), local("NotoSerifKR-Light"),
+    url(./fonts/NotoSerifCJKkr-Light.woff2) format("woff2");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Velino Text";
+    src: local("Velino Text Thin"), local("VerlinoText-Thin"),
+    local("Noto Serif KR Light"), local("NotoSerifKR-Light"),
+    url(./fonts/NotoSerifCJKkr-Light.woff2) format("woff2");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Velino Text";
+    src: local("Velino Text Thin"), local("VerlinoText-Thin"),
+    local("Noto Serif"), local("NotoSerif"),
+    local("Noto Serif KR Regular"), local("NotoSerifkr-Regular"),
+    url(./fonts/NotoSerifCJKkr-Regular.woff2) format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Velino Text";
+    src: local("Velino Text Thin Italic"), local("VerlinoText-ThinItalic"),
+    local("Noto Serif"), local("NotoSerif"),
+    local("Noto Serif KR Regular"), local("NotoSerifkr-Regular"),
+    url(./fonts/NotoSerifCJKkr-Regular.woff2) format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Velino Text";
+    src: local("Velino Text Light"), local("VerlinoText-Light"),
+    local("Noto Serif KR Medium"), local("NotoSerifKR-Medium"),
+    url(./fonts/NotoSerifCJKkr-Medium.woff2) format("woff2");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Velino Text";
+    src: local("Velino Text Light Italic"), local("VerlinoText-LightItalic"),
+    local("Noto Serif KR Medium"), local("NotoSerifKR-Medium"),
+    url(./fonts/NotoSerifCJKkr-Medium.woff2) format("woff2");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Velino Text";
+    src: local("Velino Text Thin"), local("VerlinoText-Thin"),
+    local("Noto Serif Bold"), local("NotoSerif-Bold"),
+    local("Noto Serif KR Bold"), local("NotoSerifKR-Bold"),
+    url(./fonts/NotoSerifCJKkr-Bold.woff2) format("woff2");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Velino Text";
+    src: local("Velino Text Thin Italic"), local("VerlinoText-ThinItalic"),
+    local("Noto Serif Bold"), local("NotoSerif-Bold"),
+    local("Noto Serif KR Bold"), local("NotoSerifKR-Bold"),
+    url(./fonts/NotoSerifCJKkr-Bold.woff2) format("woff2");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Velino Text";
+    src: local("Velino Text Thin"), local("VerlinoText-Thin"),
+    local("Noto Serif Black"), local("NotoSerif-Black"),
+    local("Noto Serif KR Black"), local("NotoSerifKR-Black"),
+    url(./fonts/NotoSerifCJKkr-Black.woff2) format("woff2");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Velino Text";
+    src: local("Velino Text Thin Italic"), local("VerlinoText-ThinItalic"),
+    local("Noto Serif Black"), local("NotoSerif-Black"),
+    local("Noto Serif KR Black"), local("NotoSerifKR-Black"),
+    url(./fonts/NotoSerifCJKkr-Black.woff2) format("woff2");
+    font-weight: 900;
+    font-style: italic;
+}

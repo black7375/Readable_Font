@@ -1,0 +1,12 @@
+body,
+input,
+.navigator-toolbox,
+.toolbarbutton-text,
+.sidebar-title
+{
+  -webkit-text-stroke-width: 0.04px                  !important;
+  -webkit-font-smoothing:    subpixel-antialiased    !important;
+  -moz-osx-font-smoothing:   auto                    !important;
+  text-shadow:               0px 0px 0.001px #ACACAC !important;
+  text-rendering:            auto;
+}

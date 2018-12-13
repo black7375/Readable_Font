@@ -51,7 +51,7 @@ http://gorupec.awardspace.com/mathml.xhtml
 
 기타 프로그램 소스 또한 압축을 통해 크기를 최대한 줄였습니다.
 
-* T List.
+* Todo List.
 - 영어 로케일 지원.
 - 본문영역의 글씨크기 조정기능.
 - 본문글씨의 유동적인 크기 및 간격 조정기능.

@@ -370,7 +370,7 @@
     font-family: "Museo Sans";
     src: local("Museo Sans 100"), local("MuseoSans-100"),
     local("Noto Sans KR Thin"), local("NotoSansKR-Thin"),
-    url(./fonts/NotoSansCJKkr-Thin.woff2) format("woff2")
+    url(./fonts/NotoSansCJKkr-Thin.woff2) format("woff2");
     font-weight: 100;
 }
 
@@ -378,7 +378,7 @@
     font-family: "Museo Sans";
     src: local("Museo Sans 100 Italic"), local("MuseoSans-100Italic"),
     local("Noto Sans KR Thin"), local("NotoSansKR-Thin"),
-    url(./fonts/NotoSansCJKkr-Thin.woff2) format("woff2")
+    url(./fonts/NotoSansCJKkr-Thin.woff2) format("woff2");
     font-weight: 100;
     font-style: italic;
 }

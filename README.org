@@ -51,7 +51,7 @@ http://gorupec.awardspace.com/mathml.xhtml
 
 기타 프로그램 소스 또한 압축을 통해 크기를 최대한 줄였습니다.
 
-* TODO List.
+* Todo List.
 - 영어 로케일 지원.
 - 본문영역의 글씨크기 조정기능.
 - 본문글씨의 유동적인 크기 및 간격 조정기능.
@@ -63,9 +63,9 @@ http://gorupec.awardspace.com/mathml.xhtml
 - 글꼴치환 3단계로 개편[유사한 글꼴-향상된 글꼴-일관된 글꼴]
 
 * 자세한 기능 제안 및 건의사항.
-제 블로그(https://black7375.tumblr.com/)에서 Ask me anything about
+제 블로그( https://black7375.tumblr.com )에서 Ask me anything about
 Blog Post메뉴를 누른뒤 질문하면 됩니다. 이미지가 필요할 시
-imugur(https://imgur.com/upload) 사용.
+imugur( https://imgur.com/upload ) 사용.
 
 OR
 

@@ -31,5 +31,7 @@
 
   "web_accessible_resources": ["contents/*.css", "contents/*.woff2"],
 
-  "options_page": "options/options.html"
+  "options_ui": {
+    "page": "options/options.html"
+  }
 }

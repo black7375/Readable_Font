@@ -25,6 +25,13 @@ h1 {
   font-weight: 900;
 }
 
+h1::after {
+  content:    '';
+  display:    block;
+  margin-top: 15px;
+  border-top: 1.5px solid #9A9A9A;
+}
+
 table,
 h2 {
   font-size:   24px;

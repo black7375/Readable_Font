@@ -1,5 +1,5 @@
 #+TITLE:Readable Font
-
+[[Resource/icon/icon@128.png]]\\
 가독성 좋은 글씨를 보여줍니다.
 
 * 개요.
@@ -10,21 +10,24 @@
 
 * 기능소개.
 ** 쉬운 사용법.
-복잡한 설정 없이 옵션을 키고 끄는 것만으로 사용할 수 있습니다.
+[[Resource/sceenshot/setting.png]]
+- 복잡한 설정 없이 옵션을 키고 끄는 것만으로 사용할 수 있습니다.
 
 ** 선명하게.
-흐릿하게 보이는 글씨들을 선명하게 보여줍니다.
-저해상도 모니터들을 위한 옵션도 보유!!
+[[Resource/sceenshot/sharpen.png]]
+- 흐릿하게 보이는 글씨들을 선명하게 보여줍니다.
+- 저해상도 모니터들을 위한 옵션도 보유!!
 
 ** 글꼴치환.
-못생긴 글꼴은 비슷하지만 더 나은 글꼴로 대체합니다.
-화면에 표시 될 글꼴이 없으면 유사한 글꼴로 보여줍니다.
-사이트가 글꼴을 제공하지 않으면 내장된 글꼴로 표현합니다.
+[[Resource/sceenshot/better.png]]
+- 못생긴 글꼴은 비슷하지만 더 나은 글꼴로 대체합니다.
+- 화면에 표시 될 글꼴이 없으면 유사한 글꼴로 보여줍니다.
+- 사이트가 글꼴을 제공하지 않으면 내장된 글꼴로 표현합니다.
 
-향상된 대상 글꼴: 굴림/굴림체, 돋움/돋움체, 바탕/바탕체, 애플고딕, Arial
+향상된 대상 글꼴: 굴림/굴림체, 돋움/돋움체, 바탕/바탕체, 애플고딕, Arial\\
 유사한 대상 글꼴: 궁서/궁서체, Helvetica, Helvetica Neue, Times New Roman, Museo Sans, Gibson, Velino Text
 
-글꼴치환표.
+- 글꼴치환표.
 https://black7375.tumblr.com/post/181038470815/
 
 ** 글꼴내장.
@@ -37,6 +40,7 @@ https://black7375.tumblr.com/post/180967349590/
 폰트치환 기능을 켰다 껐다하면서 테스트 해봅시다.
 
 ** 수식표현.
+[[Resource/sceenshot/MathML.png]]
 MathML에 STIX TWO 폰트를 적용시킵니다.
 MathML 문서가 있을시 Mathjax를 로드하여 보여주는 옵션.
 

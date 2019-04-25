@@ -2,6 +2,11 @@
 [[Resource/icon/icon@128.png]]\\
 가독성 좋은 글씨를 보여줍니다.
 
+*Store*
+- [[https://addons.mozilla.org/ko/firefox/addon/readable-font/][Firefox]]
+- [[https://chrome.google.com/webstore/detail/readable-font/ckgoimpkejadjkjfpemacjpeimdgmdpk][Chrome]]
+- [[https://store.whale.naver.com/detail/ckhloeobmonbhapgmfcbobacadkjckbi][Whale]]
+
 * 개요.
 우리는 웹서핑을 하면서 각종 컨텐츠를 소비하고 있습니다.
 요즘 이미지와 영상 비중이 늘고 있다고 하나, 글자는 여전히 각종 메뉴 및 설명에 쓰이는 필수 불가결적인 요소이자 효과적인 정보전달 수단입니다.

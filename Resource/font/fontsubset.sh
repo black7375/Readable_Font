@@ -91,3 +91,8 @@ font_subset NanumGothicCoding-Bold.ttf
 echo -e "\nD2 Coding"
 font_subset D2Coding-Ver1.3.2-20180524.ttf
 font_subset D2CodingBold-Ver1.3.2-20180524.ttf
+cd ..
+
+echo -e "\n--------------------"
+echo -e " Font Subset END"
+echo -e "--------------------\n"

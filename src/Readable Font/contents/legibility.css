@@ -1,0 +1,14 @@
+body,
+input,
+.navigator-toolbox,
+.toolbarbutton-text,
+.sidebar-title
+{
+  -webkit-text-stroke-width: 0.04px                  !important;
+  -webkit-font-smoothing:    antialiased             !important;
+  -moz-osx-font-smoothing:   grayscale               !important;
+  text-shadow:               0px 0px 0.001px #ACACAC !important;
+  text-rendering:            geometricPrecision      !important;
+  font-kerning:              normal                  !important;
+  font-variant-ligatures:    normal                  !important;
+}

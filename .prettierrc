@@ -1,0 +1,5 @@
+{
+  "trailingComma": "all",
+  "requirePragma": false,
+  "arrowParens": "always"
+}

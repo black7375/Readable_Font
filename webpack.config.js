@@ -36,18 +36,16 @@ if (fileSystem.existsSync(secretsPath)) {
 var options = {
   mode: process.env.NODE_ENV || 'development',
   entry: {
-    newtab: path.join(__dirname, 'src', 'pages', 'Newtab', 'index.jsx'),
-    options: path.join(__dirname, 'src', 'pages', 'Options', 'index.tsx'),
-    popup: path.join(__dirname, 'src', 'pages', 'Popup', 'index.jsx'),
-    background: path.join(__dirname, 'src', 'pages', 'Background', 'index.js'),
-    contentScript: path.join(__dirname, 'src', 'pages', 'Content', 'index.js'),
+    'options/options': path.join(__dirname, 'src', 'options', 'options.js'),
+    'popup/popup': path.join(__dirname, 'src', 'popup', 'popup.js'),
+    'contents/content': path.join(__dirname, 'src', 'contents', 'content.js'),
   },
   chromeExtensionBoilerplate: {
     notHotReload: ['contentScript'],
   },
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: '[name].bundle.js',
+    filename: '[name].js',
     publicPath: ASSET_PATH,
   },
   module: {
@@ -79,11 +77,11 @@ var options = {
         },
         exclude: /node_modules/,
       },
-      {
-        test: /\.html$/,
-        loader: 'html-loader',
-        exclude: /node_modules/,
-      },
+      // {
+      //   test: /\.html$/,
+      //   loader: 'html-loader',
+      //   exclude: /node_modules/,
+      // },
       { test: /\.(ts|tsx)$/, loader: 'ts-loader', exclude: /node_modules/ },
       {
         test: /\.(js|jsx)$/,
@@ -136,40 +134,53 @@ var options = {
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: 'src/pages/Content/content.styles.css',
-          to: path.join(__dirname, 'build'),
+          from: path.join(__dirname, 'src', '*.png'),
+          to: path.join(__dirname, 'build', '[name].[ext]'),
+          force: true,
+        },
+      ],
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.join(__dirname, 'src', 'lib'),
+          to: path.join(__dirname, 'build', 'lib'),
+          force: true,
+        },
+      ],
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.join(__dirname, 'src', 'contents', '*.css'),
+          to: path.join(__dirname, 'build', 'contents', '[name].[ext]'),
+          force: true,
+        },
+      ],
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.join(__dirname, 'src', 'contents', 'fonts', '*.woff2'),
+          to({ context, absoluteFilename }) {
+            return path.join(
+              __dirname, 'build', 'contents', 'fonts', '[name].[ext]'
+            );
+          },
           force: true,
         },
       ],
     }),
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'src', 'pages', 'Newtab', 'index.html'),
-      filename: 'newtab.html',
-      chunks: ['newtab'],
-      cache: false,
-    }),
-    new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'src', 'pages', 'Options', 'index.html'),
-      filename: 'options.html',
+      template: path.join(__dirname, 'src', 'options', 'options.html'),
+      filename: path.join(__dirname, 'build', 'options', 'options.html'),
       chunks: ['options'],
       cache: false,
     }),
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'src', 'pages', 'Popup', 'index.html'),
-      filename: 'popup.html',
+      template: path.join(__dirname, 'src', 'popup', 'popup.html'),
+      filename: path.join(__dirname, 'build', 'popup', 'popup.html'),
       chunks: ['popup'],
-      cache: false,
-    }),
-    new HtmlWebpackPlugin({
-      template: path.join(
-        __dirname,
-        'src',
-        'pages',
-        'Background',
-        'index.html'
-      ),
-      filename: 'background.html',
-      chunks: ['background'],
       cache: false,
     }),
   ],

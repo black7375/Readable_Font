@@ -81,3 +81,7 @@ OR
 깃허브 이슈 사용.
 
 + Windows10, macOS High Sierra, Kubuntu 18.10에서 테스트 했습니다.
+
+
+* Thanks
+  https://github.com/lxieyang/chrome-extension-boilerplate-react

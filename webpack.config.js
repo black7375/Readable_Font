@@ -36,9 +36,10 @@ if (fileSystem.existsSync(secretsPath)) {
 var options = {
   mode: process.env.NODE_ENV || 'development',
   entry: {
-    'options/options': path.join(__dirname, 'src', 'options', 'options.js'),
-    'popup/popup': path.join(__dirname, 'src', 'popup', 'popup.js'),
-    'contents/content': path.join(__dirname, 'src', 'contents', 'content.js'),
+    'options/options': path.join(__dirname, 'src', 'options', 'index.tsx'),
+    'popup/popup': path.join(__dirname, 'src', 'popup', 'index.tsx'),
+    'contents/content': path.join(__dirname, 'src', 'contents', 'content.ts'),
+    'background/background': path.join(__dirname, 'src', 'background', 'background.ts')
   },
   chromeExtensionBoilerplate: {
     notHotReload: ['contentScript'],
@@ -77,11 +78,11 @@ var options = {
         },
         exclude: /node_modules/,
       },
-      // {
-      //   test: /\.html$/,
-      //   loader: 'html-loader',
-      //   exclude: /node_modules/,
-      // },
+      {
+        test: /\.html$/,
+        loader: 'html-loader',
+        exclude: /node_modules/,
+      },
       { test: /\.(ts|tsx)$/, loader: 'ts-loader', exclude: /node_modules/ },
       {
         test: /\.(js|jsx)$/,
@@ -143,15 +144,6 @@ var options = {
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: path.join(__dirname, 'src', 'lib'),
-          to: path.join(__dirname, 'build', 'lib'),
-          force: true,
-        },
-      ],
-    }),
-    new CopyWebpackPlugin({
-      patterns: [
-        {
           from: path.join(__dirname, 'src', 'contents', '*.css'),
           to: path.join(__dirname, 'build', 'contents', '[name].[ext]'),
           force: true,
@@ -174,13 +166,19 @@ var options = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src', 'options', 'options.html'),
       filename: path.join(__dirname, 'build', 'options', 'options.html'),
-      chunks: ['options'],
+      chunks: [path.join('options', 'options')],
       cache: false,
     }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src', 'popup', 'popup.html'),
       filename: path.join(__dirname, 'build', 'popup', 'popup.html'),
-      chunks: ['popup'],
+      chunks: [path.join('popup', 'popup')],
+      cache: false,
+    }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, 'src', 'background', 'background.html'),
+      filename: path.join(__dirname, 'build', 'background', 'background.html'),
+      chunks: [path.join('background', 'background')],
       cache: false,
     }),
   ],

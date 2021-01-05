@@ -2,6 +2,7 @@
 import { jsx, css } from '@emotion/react';
 import { useState, useEffect, useCallback } from 'react';
 import { getOption, setOption } from './storage';
+import { LableS } from './styles';
 
 const ToggleS = css`
   display:     block;
@@ -57,14 +58,19 @@ const BtnS = css`
 `;
 
 interface CheckBoxI {
-  label: string;
-  id:    string;
+  label:  string;
+  id:     string;
+  popup?: boolean;
 };
 
-const Checkbox = ({label, id}: CheckBoxI) => {
+const Checkbox = ({label, id, popup = false}: CheckBoxI) => {
   const [checked, setChecked] = useState(false);
   useEffect(() => {
-    getOption(id).then((option) => setChecked(option));
+    getOption(id).then((option) => {
+      if(option !== undefined) {
+        setChecked(option);
+      }
+    });
   }, []);
 
   const onToggle = useCallback(
@@ -78,7 +84,7 @@ const Checkbox = ({label, id}: CheckBoxI) => {
 
   return (
     <div css={ToggleS}>
-      <h2>{label}
+      <h2 css={LableS(popup)}>{label}
         <input type="checkbox" id={id} css={CheckboxS} checked={checked} />
         <label htmlFor={id} css={BtnS} onPointerDown={onToggle} ></label>
       </h2>

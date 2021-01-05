@@ -4,7 +4,7 @@ const storage = chrome.storage.sync;
 export default storage;
 
 interface storageI {
-  [key: string]: optionI["dstate"];
+  [key: string]: optionI["dstate"] | undefined;
 }
 
 export const getOption = async (id: string) => {

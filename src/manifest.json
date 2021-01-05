@@ -24,6 +24,10 @@
     "js": ["contents/content.js"]
   }],
 
+  "background": {
+    "page": "background/background.html"
+  },
+
   "permissions": [
     "storage",
     "<all_urls>"

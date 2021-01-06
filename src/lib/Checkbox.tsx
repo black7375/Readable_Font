@@ -20,7 +20,7 @@ const CheckboxS = css`
     background-color: #3498db;
 
     &::before {
-      transform: translate(25px, 0);
+      transform:  translate(25px, 0);
     }
   }
 `;
@@ -30,12 +30,11 @@ const BtnS = css`
   float:            right;
   font-size:        1.4em;
   position:         relative;
-  height:           35px;
-  width:            60px;
+  height:           25px;
+  width:            50px;
   border-radius:    70px;
   background-color: #e25d5d;
   border:           5px solid #ad1000;
-  transition:       all 250ms ease-in;
 
   &:hover {
     cursor: pointer;
@@ -43,11 +42,12 @@ const BtnS = css`
 
   &::before {
     position:         absolute;
-    width:            25px;
-    height:           25px;
+    width:            15px;
+    height:           15px;
     border-radius:    50%;
     background-color: #f2dd68;
     border:           5px solid #e5ce5e;
+    transition:       all 350ms ease-in;
   }
 
   &::before,
@@ -79,7 +79,7 @@ const Checkbox = ({label, id, popup = false}: CheckBoxI) => {
       setChecked(reversed);
       setOption(id, reversed);
     },
-    [],
+    [checked],
   );
 
   return (

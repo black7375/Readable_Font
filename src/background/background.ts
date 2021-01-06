@@ -5,9 +5,11 @@ const initOptions = (option: optionI) => {
   const id         = option.id;
   const subOptions = option.subs;
 
-  if(id === undefined) {
-    setOption(id, option.dstate);
-  }
+  getOption(id).then(state => {
+    if(state === undefined) {
+      setOption(id, option.dstate);
+    }
+  });
 
   if(subOptions !== null) {
     subOptions.map(option => initOptions(option));

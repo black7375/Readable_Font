@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { Fragment, useState, useEffect } from 'react';
-import { jsx, Global, css } from '@emotion/react';
+import { jsx, css } from '@emotion/react';
 import { LableS } from "../lib/styles";
 
 const LicenseDesS = css`

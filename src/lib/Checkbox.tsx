@@ -5,11 +5,15 @@ import { getOption, setOption } from './storage';
 import { LableS } from './styles';
 
 const ToggleS = css`
-  display:     block;
-  margin-top:  40px;
-  user-select: none;
-  position:    relative;
-  box-sizing:  border-box;
+  contain:         content;
+  display:         flex;
+  flex-direction:  row;
+  justify-content: space-between;
+  align-items:     center;
+  margin-bottom:   40px;
+  user-select:     none;
+  position:        relative;
+  box-sizing:      border-box;
 `;
 
 const CheckboxS = css`
@@ -26,22 +30,18 @@ const CheckboxS = css`
 `;
 
 const BtnS = css`
-  display:          inline-block;
-  float:            right;
-  font-size:        1.4em;
-  position:         relative;
-  height:           25px;
-  width:            50px;
+  height:           35px;
+  width:            60px;
   border-radius:    70px;
   background-color: #e25d5d;
   border:           5px solid #ad1000;
+  box-sizing:       border-box;
 
   &:hover {
     cursor: pointer;
   }
 
   &::before {
-    position:         absolute;
     width:            15px;
     height:           15px;
     border-radius:    50%;
@@ -84,10 +84,9 @@ const Checkbox = ({label, id, popup = false}: CheckBoxI) => {
 
   return (
     <div css={ToggleS}>
-      <h2 css={LableS(popup)}>{label}
-        <input type="checkbox" id={id} css={CheckboxS} checked={checked} />
-        <label htmlFor={id} css={BtnS} onPointerDown={onToggle} ></label>
-      </h2>
+      <h2 css={LableS(popup)}>{label}</h2>
+      <input type="checkbox" id={id} css={CheckboxS} checked={checked} />
+      <label htmlFor={id} css={BtnS} onPointerDown={onToggle} ></label>
     </div>
   );
 };

@@ -14,7 +14,7 @@ interface LicenseI {
 }
 
 const License = ({product, file}: LicenseI) => {
-  const fileURL = chrome.extension.getURL(file);
+  const fileURL = chrome.runtime.getURL(file);
   const [contents, setContents] = useState("");
   useEffect(() => {
     fetch(fileURL)
@@ -53,7 +53,7 @@ const fonts = (<table css={LableS(false)}>
   </tbody>
 </table>);
 
-const files  = ["options/license_mit", "options/license/sil"];
+const files  = ["options/license_mit.txt", "options/license_sil.txt"];
 const lables = [readable, fonts];
 const licenses = files.map((file, idx) =>
   <License product={lables[idx]} file={file} />);
@@ -66,4 +66,3 @@ const Licenses = () => {
   );
 };
 export default Licenses;
-

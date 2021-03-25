@@ -54,7 +54,7 @@ const Options = () => {
       <Title />
       {options}
       <SectionHeader>License</SectionHeader>
-      {Licenses}
+      <Licenses />
     </Fragment>
   );
 };

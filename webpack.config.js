@@ -144,6 +144,15 @@ var options = {
     new CopyWebpackPlugin({
       patterns: [
         {
+          from: path.join(__dirname, 'src', 'options', '*.txt'),
+          to: path.join(__dirname, 'build', 'options', '[name].[ext]'),
+          force: true,
+        },
+      ],
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
           from: path.join(__dirname, 'src', 'contents', '*.css'),
           to: path.join(__dirname, 'build', 'contents', '[name].[ext]'),
           force: true,

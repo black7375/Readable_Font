@@ -16,6 +16,10 @@
     "default_icon":  "icon@16.png"
   },
 
+  "options_ui": {
+    "page": "options/options.html"
+  },
+
   "content_scripts": [{
     "all_frames": true,
     "match_about_blank": true,
@@ -33,9 +37,5 @@
     "<all_urls>"
   ],
 
-  "web_accessible_resources": ["contents/*.css", "contents/*.woff2"],
-
-  "options_ui": {
-    "page": "options/options.html"
-  }
+  "web_accessible_resources": ["options/*.txt", "contents/*.css", "contents/*.woff2"]
 }

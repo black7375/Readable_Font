@@ -6,6 +6,7 @@ const TitleS = (popup: boolean) => css`
   font-weight: 900;
   font-family: "Noto Serif", serif;
   font-size:   ${popup ? "23px" : "30px" };
+  margin-bottom: ${popup ? "35px" : "0"};
 `;
 
 interface TitleI {

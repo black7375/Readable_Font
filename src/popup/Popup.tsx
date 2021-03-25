@@ -7,9 +7,9 @@ import OPTIONS  from '../lib/options';
 
 const GlobalS = css`
   body {
-    padding:    10px 20px 0;
+    padding:    10px 10px 0;
     margin-bottom: -10px;
-    width:      230px;
+    width:      225px;
     overflow-y: scroll;
     overflow-x: hidden;
   }
